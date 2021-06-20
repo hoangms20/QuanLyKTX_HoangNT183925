@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.chitiethoadon.ChiTietHoaDonController">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="623.0">
+         <children>
+            <Label fx:id="chiTietHD" alignment="CENTER" prefHeight="45.0" prefWidth="620.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="45.0" prefHeight="124.0" prefWidth="704.0">
+         <children>
+            <Label fx:id="DN" alignment="TOP_LEFT" prefHeight="126.0" prefWidth="700.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="170.0" prefHeight="200.0" prefWidth="715.0">
+         <children>
+            <Label fx:id="DV" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="707.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

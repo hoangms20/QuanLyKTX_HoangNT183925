@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1407.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.svdangky.SVDangKyController">
+   <top>
+      <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#themSV" prefHeight="40.0" prefWidth="139.0" text="Thêm">
+               <graphic>
+                  <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="50.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#xoaSV" prefHeight="40.0" prefWidth="133.0" text="Xóa">
+               <graphic>
+                  <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#taiLenTuTep" prefHeight="40.0" prefWidth="167.0" text="Tải lên từ tệp Excel">
+               <graphic>
+                  <FontAwesomeIcon glyphName="UPLOAD" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label prefHeight="40.0" prefWidth="106.0" text="Đợt Đăng Ký:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="dotDKSV" onAction="#capNhatDSSVDK" prefHeight="39.0" prefWidth="253.0" />
+            <Label prefHeight="40.0" prefWidth="161.0" text="Số lượng đã đăng ký:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="slDaDangKy" prefHeight="40.0" prefWidth="98.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <TableView fx:id="tableSVDK" prefHeight="655.0" prefWidth="1402.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="sttSVDK" prefWidth="55.0" text="#" />
+          <TableColumn fx:id="mssvDK" prefWidth="129.0" text="Mã sinh viên" />
+            <TableColumn fx:id="hoTenSVDK" prefWidth="244.0" text="Họ Tên" />
+            <TableColumn fx:id="maLopSVDK" prefWidth="86.0" text="Mã lớp" />
+            <TableColumn fx:id="ngaySinhSVDK" minWidth="0.0" prefWidth="110.0" text="Ngày sinh" />
+            <TableColumn fx:id="gioiTinhSVDK" minWidth="0.0" prefWidth="89.0" text="Giới tính" />
+            <TableColumn fx:id="queQuanSVDK" prefWidth="155.0" text="Quê quán" />
+            <TableColumn fx:id="uuTienSVDK" minWidth="0.0" prefWidth="363.0" text="Ưu Tiên" />
+            <TableColumn fx:id="trangThaiSVDK" prefWidth="169.0" text="Trạng Thái" />
+        </columns>
+         <BorderPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tkmssv" prefHeight="43.0" prefWidth="342.0" promptText="Tìm kiếm theo MSSV">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#timKiemSVDK" prefHeight="44.0" prefWidth="167.0" text="Tìm kiếm">
+               <HBox.margin>
+                  <Insets left="10.0" right="100.0" />
+               </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#capNhatDSSVDK" prefHeight="30.0" prefWidth="171.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>

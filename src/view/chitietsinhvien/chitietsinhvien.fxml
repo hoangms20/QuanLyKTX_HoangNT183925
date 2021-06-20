@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="371.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.chitietsinhvien.ChiTietSinhVienController">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="621.0" text="Thông tin sinh viên">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="45.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="hoTenVaMSSV" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="65.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lopVaKhoa" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="85.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="vien" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="105.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="mucDoUTVaTrangThai" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="125.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="gioiTinhVaNgaySinh" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="145.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="CMND" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="165.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="SDTVaEmail" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="185.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="queQuan" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="205.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="ngayDangKy" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="225.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="ngayRoiKhoi" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="245.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="ghiChuSV" prefHeight="20.0" prefWidth="621.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

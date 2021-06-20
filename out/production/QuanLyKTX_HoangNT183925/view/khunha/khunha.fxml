@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.khunha.KhuNhaController">
+    <top>
+        <HBox prefHeight="37.0" prefWidth="876.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#themKhuNha" prefHeight="40.0" prefWidth="140.0" text="Thêm">
+                    <graphic>
+                        <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#xoaKhuNha" prefHeight="40.0" prefWidth="140.0" text="Xóa">
+                    <graphic>
+                        <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+        </HBox>
+    </top>
+    <bottom>
+        <TableView fx:id="tableKhuNha" prefHeight="548.0" prefWidth="1069.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="sttKhuNha" prefWidth="53.0" text="#" />
+                <TableColumn fx:id="maKhuNha" prefWidth="129.0" text="Mã khu nhà" />
+                <TableColumn fx:id="tenKhuNha" prefWidth="221.0" text="Tên khu nhà" />
+                <TableColumn fx:id="slPhongKhuNha" prefWidth="164.0" text="Số lượng phòng" />
+            <TableColumn fx:id="slConTrong" prefWidth="198.0" text="Số lượng còn trống" />
+            </columns>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+        </TableView>
+    </bottom>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tkMaKhuNha" prefHeight="53.0" prefWidth="342.0" promptText="Tìm kiếm theo Mã khu nhà">
+                    <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#timKiemKhuNha" prefHeight="55.0" prefWidth="167.0" text="Tìm kiếm">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+               </graphic>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#capNhatKhuNha" prefHeight="30.0" prefWidth="171.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

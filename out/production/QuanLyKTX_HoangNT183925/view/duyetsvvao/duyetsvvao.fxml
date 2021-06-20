@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.duyetsvvao.DuyetSVVaoController">
+   <left>
+      <AnchorPane prefHeight="455.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableViewDSChoDuyet" layoutX="4.0" layoutY="-2.0" prefHeight="454.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="checkSVDuyetVao" prefWidth="38.0">
+                     <graphic>
+                        <CheckBox fx:id="selectALLDSCD" mnemonicParsing="false" onAction="#tichTatCaDSChoDuyet" />
+                     </graphic>
+                  </TableColumn>
+                <TableColumn fx:id="mssvDSCD" prefWidth="82.0" text="Mã sinh viên" />
+                  <TableColumn fx:id="tenSVDSCD" prefWidth="205.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="gioiTinhDSCD" prefWidth="60.0" text="Giới tính" />
+                  <TableColumn fx:id="mucDoUuTienDSCD" prefWidth="96.0" text="Mức độ ưu tiên" />
+                  <TableColumn fx:id="ngayDKDSCD" prefWidth="95.0" text="Ngày đăng ký" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="384.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableViewDSDaDuyet" prefHeight="453.0" prefWidth="589.0">
+               <columns>
+                  <TableColumn fx:id="checkHuySVVuaDuyetVao" prefWidth="38.0">
+                     <graphic>
+                        <CheckBox fx:id="selectALLDSDD" mnemonicParsing="false" onAction="#tichTatCaDSDaDuyet" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="mssvDSDD" prefWidth="82.0" text="Mã sinh viên" />
+                  <TableColumn fx:id="tenSVDSDD" prefWidth="201.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="gioiTinhDSDD" prefWidth="66.0" text="Giới tính" />
+                  <TableColumn fx:id="mucDoUuTienDSDD" prefWidth="101.0" text="Mức độ ưu tiên" />
+                  <TableColumn fx:id="ngayDKDSDD" prefWidth="99.0" text="Ngày đăng ký" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="465.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutY="154.0" mnemonicParsing="false" onAction="#duyetSVVao" prefHeight="68.0" prefWidth="130.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="FORWARD" size="3em" />
+               </graphic>
+            </Button>
+            <Button layoutY="255.0" mnemonicParsing="false" onAction="#huySVVuaDuyetVao" prefHeight="68.0" prefWidth="130.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="BACKWARD" size="3em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="97.0" prefWidth="1292.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="199.0" text="Danh sách đang chờ duyệt">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#xoaSVChoDuyet" prefHeight="50.0" prefWidth="126.0" text="Xóa">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#eb0b0b" glyphName="REMOVE" size="2em" />
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="276.0" layoutY="49.0" prefHeight="39.0" prefWidth="198.0" text="Số lượng sinh viên đăng ký:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="slSVNamDK" layoutX="482.0" layoutY="58.0" prefHeight="21.0" prefWidth="53.0" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="700.0" layoutY="1.0" prefHeight="27.0" prefWidth="146.0" text="Danh sách đã duyệt">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="700.0" layoutY="36.0" prefHeight="26.0" prefWidth="102.0" text="Đợt đăng ký:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbDotDKDuyetSVVao" layoutX="802.0" layoutY="40.0" prefHeight="25.0" prefWidth="202.0" />
+            <Label alignment="CENTER" layoutX="703.0" layoutY="68.0" prefHeight="29.0" prefWidth="136.0" text="Số lượng đã duyệt:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="slSVNamDaDuyet" layoutX="839.0" layoutY="72.0" prefHeight="21.0" prefWidth="53.0" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="1108.0" layoutY="31.0" mnemonicParsing="false" onAction="#capNhatSVDaDuyet" prefHeight="54.0" prefWidth="175.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+            </Button>
+            <Label layoutX="283.0" layoutY="8.0" prefHeight="34.0" prefWidth="74.0" text="Chỉ Tiêu :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="chiTieuDotDK" layoutX="350.0" layoutY="8.0" prefHeight="34.0" prefWidth="68.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

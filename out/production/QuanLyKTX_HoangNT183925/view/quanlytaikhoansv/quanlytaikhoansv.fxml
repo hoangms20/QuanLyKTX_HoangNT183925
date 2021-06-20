@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.quanlytaikhoansv.QuanLyTaiKhoanSVController">
+   <center>
+      <TableView fx:id="tableTKSV" prefHeight="435.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="stt" prefWidth="52.0" text="#" />
+          <TableColumn fx:id="hoTen" prefWidth="174.0" text="Họ tên" />
+            <TableColumn fx:id="tenDangNhap" prefWidth="165.0" text="Tên đăng nhập" />
+            <TableColumn fx:id="matKhau" prefWidth="202.0" text="Mật khẩu" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="103.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="590.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#themTKSV" prefHeight="40.0" prefWidth="140.0" text="Thêm">
+                     <graphic>
+                        <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#xoaTKSV" prefHeight="40.0" prefWidth="140.0" text="Xóa">
+                     <graphic>
+                        <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutY="49.0" prefHeight="56.0" prefWidth="580.0">
+               <children>
+                  <TextField fx:id="tkSV" prefHeight="37.0" prefWidth="335.0" promptText="Tìm kiếm theo MSSV">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#timKiemSV" prefHeight="42.0" prefWidth="128.0" text="Tìm kiếm">
+                     <graphic>
+                        <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#capNhatDSTK" prefHeight="42.0" prefWidth="132.0" text="Cập nhật">
+                     <graphic>
+                        <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

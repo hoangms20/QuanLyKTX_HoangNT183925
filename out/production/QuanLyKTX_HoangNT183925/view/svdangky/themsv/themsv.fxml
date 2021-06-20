@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.svdangky.themsv.ThemSVController">
+   <children>
+      <Label layoutX="203.0" text="Thêm sinh viên">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tMSSV" prefHeight="39.0" prefWidth="167.0" promptText="Mã sinh viên">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tMUT" prefHeight="39.0" prefWidth="135.0" promptText="Mã ưu tiên">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tML" prefHeight="39.0" prefWidth="134.0" promptText="Mã lớp">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tMK" prefHeight="39.0" prefWidth="132.0" promptText="Mã khóa" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tHVT" prefHeight="39.0" prefWidth="313.0" promptText="Họ Và Tên">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <DatePicker fx:id="tNgaySinh" prefHeight="39.0" prefWidth="231.0" promptText="Ngày sinh (mm/dd/yyyy)" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tCMND" prefHeight="39.0" prefWidth="256.0" promptText="CMND">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="33.0" prefWidth="56.0" text="Giới tính:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="tcBGioiTinh" prefHeight="36.0" prefWidth="152.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="210.0" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tSDT" prefHeight="39.0" prefWidth="256.0" promptText="Số điện thoại">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tQueQuan" prefHeight="39.0" prefWidth="225.0" promptText="Quê quán">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="265.0" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tEmail" prefHeight="39.0" prefWidth="256.0" promptText="Email">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <DatePicker fx:id="tNgayDK" prefHeight="43.0" prefWidth="232.0" promptText="Ngày đăng ký (mm/dd/yyyy)">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <Button layoutX="434.0" layoutY="353.0" mnemonicParsing="false" onAction="#xacNhanThemSV" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

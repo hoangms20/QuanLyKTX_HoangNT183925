@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.loaidichvu.LoaiDichVuController">
+    <top>
+        <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#themDV" prefHeight="40.0" prefWidth="111.0" text="Thêm">
+                    <graphic>
+                        <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="50.0" right="20.0" />
+                    </HBox.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#suaDV" prefHeight="40.0" prefWidth="113.0" text="Sửa">
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL" size="2em" />
+               </graphic>
+            </Button>
+                <Button mnemonicParsing="false" onAction="#xoaDV" prefHeight="40.0" prefWidth="111.0" text="Xóa">
+                    <graphic>
+                        <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+        </HBox>
+    </top>
+    <bottom>
+        <TableView fx:id="tableDV" prefHeight="477.0" prefWidth="978.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="sttDV" prefWidth="39.0" text="#" />
+                <TableColumn fx:id="maDV" prefWidth="113.0" text="Mã dịch vụ" />
+                <TableColumn fx:id="tenDV" prefWidth="346.0" text="Tên dịch vụ" />
+            <TableColumn fx:id="soTienThuDV" prefWidth="126.0" text="Số tiền thu" />
+            <TableColumn fx:id="tienVuotDMDV" prefWidth="150.0" text="Tiền vượt định mức" />
+            <TableColumn fx:id="mucHoTroDV" prefWidth="99.0" text="Mức hỗ trợ" />
+            <TableColumn fx:id="batBuocDV" prefWidth="98.0" text="Bắt buộc" />
+            </columns>
+         <BorderPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </BorderPane.margin>
+        </TableView>
+    </bottom>
+    <center>
+        <HBox prefHeight="41.0" prefWidth="642.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tkDV" prefHeight="37.0" prefWidth="375.0" promptText="Tìm kiếm theo mã dịch vụ">
+                    <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#timKiemDV" prefHeight="45.0" prefWidth="130.0" text="Tìm kiếm">
+                    <HBox.margin>
+                        <Insets left="10.0" right="20.0" top="5.0" />
+                    </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+               </graphic>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#capNhatDV" prefHeight="44.0" prefWidth="142.0" text="Cập nhật">
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

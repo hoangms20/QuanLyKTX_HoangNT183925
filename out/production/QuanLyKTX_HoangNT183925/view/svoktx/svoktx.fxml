@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.svoktx.SVOKTXController">
+   <left>
+      <TreeView fx:id="treeViewSVOKTX" prefHeight="651.0" prefWidth="141.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <TableView fx:id="tableSVOKTX" prefHeight="651.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="sttSVOKTX" prefWidth="40.0" text="#" />
+          <TableColumn fx:id="mssvSVOKTX" prefWidth="85.0" text="Mã sinh viên" />
+            <TableColumn fx:id="tenSVOKTX" prefWidth="242.0" text="Tên sinh viên" />
+            <TableColumn fx:id="maPhong" prefWidth="84.0" text="Mã phòng" />
+            <TableColumn fx:id="maLopSVOKTX" prefWidth="72.0" text="Mã lớp" />
+            <TableColumn fx:id="maKhoaSVOKTX" prefWidth="54.0" text="Khóa" />
+            <TableColumn fx:id="ngaybdSVOKTX" prefWidth="111.0" text="Ngày bắt đầu" />
+            <TableColumn fx:id="ngayktSVOKTX" prefWidth="110.0" text="Ngày kết thúc" />
+            <TableColumn fx:id="ngaySinhSVOKTX" prefWidth="93.0" text="Ngày sinh" />
+            <TableColumn fx:id="gioiTinhSVOKTX" prefWidth="70.0" text="Giới tính" />
+            <TableColumn fx:id="cmndSVOKTX" minWidth="0.0" prefWidth="83.0" text="CMND" />
+            <TableColumn fx:id="queQuanSVOKTX" prefWidth="182.0" text="Quê quán" />
+        </columns>
+      </TableView>
+   </right>
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.khoanthusinhvien.KhoanThuSinhVienController">
+   <center>
+      <AnchorPane prefHeight="454.0" prefWidth="585.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableKTSV" prefHeight="454.0" prefWidth="596.0">
+               <columns>
+                  <TableColumn fx:id="stt" prefWidth="32.0" text="#" />
+                  <TableColumn fx:id="MSSV" prefWidth="62.0" text="MSSV" />
+                  <TableColumn fx:id="tenSV" prefWidth="232.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="tongTien" prefWidth="118.0" text="Tổng tiền" />
+                  <TableColumn fx:id="trangThai" prefWidth="103.0" text="Trạng thái" />
+                  <TableColumn fx:id="checkThanhToan" prefWidth="46.0">
+                     <graphic>
+                        <CheckBox fx:id="selectALL" mnemonicParsing="false" onAction="#tichTatCa" />
+                     </graphic>
+                  </TableColumn>
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="97.0" prefWidth="573.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="280.0" layoutY="48.0" mnemonicParsing="false" onAction="#capNhatDS" prefHeight="41.0" prefWidth="114.0" text="Cập nhật">
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+            </Button>
+            <ComboBox fx:id="dotDK" layoutX="106.0" layoutY="11.0" prefHeight="28.0" prefWidth="140.0" />
+            <Label layoutX="14.0" layoutY="15.0" prefHeight="20.0" prefWidth="92.0" text="Đợt đăng ký:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="169.0" layoutY="48.0" mnemonicParsing="false" onAction="#timKiem" prefHeight="41.0" prefWidth="96.0" text="Tìm kiếm">
+               <graphic>
+                  <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+               </graphic>
+            </Button>
+            <TextField fx:id="tkMSSV" layoutX="14.0" layoutY="50.0" prefHeight="37.0" prefWidth="140.0" promptText="Tìm kiếm theo MSSV" />
+            <Label layoutX="276.0" layoutY="13.0" prefHeight="27.0" prefWidth="142.0" text="Trạng thái thanh toán">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="trangThaiThanhToan" layoutX="418.0" layoutY="13.0" prefHeight="28.0" prefWidth="140.0" />
+            <Button layoutX="405.0" layoutY="48.0" mnemonicParsing="false" onAction="#xacNhanThanhToan" prefHeight="41.0" prefWidth="178.0" text="Xác nhận đã thanh toán">
+               <graphic>
+                  <FontAwesomeIcon fill="#f20000" glyphName="CHECK" size="2em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

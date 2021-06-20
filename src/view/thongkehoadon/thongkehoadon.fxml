@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.thongkehoadon.ThongKeHoaDonController">
+   <top>
+      <Label alignment="CENTER" prefHeight="61.0" prefWidth="471.0" text="Báo cáo hóa đơn" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="343.0" prefWidth="536.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="63.0" layoutY="2.0" prefHeight="31.0" prefWidth="97.0" text="Ngày tạo:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ngayTao" layoutX="160.0" onAction="#capNhat" prefHeight="35.0" prefWidth="167.0" />
+            <Label fx:id="tongHoaDon" layoutX="5.0" layoutY="45.0" prefHeight="35.0" prefWidth="330.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="slDaThanhToan" layoutX="5.0" layoutY="80.0" prefHeight="35.0" prefWidth="330.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="slChuaThanhToan" layoutX="5.0" layoutY="115.0" prefHeight="35.0" prefWidth="330.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

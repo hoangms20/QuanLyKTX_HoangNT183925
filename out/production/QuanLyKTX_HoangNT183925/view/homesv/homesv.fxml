@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.homesv.HomeSVController">
+   <top>
+      <MenuBar prefHeight="31.0" prefWidth="745.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Hệ thống">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#doiMK" text="Đổi mật khẩu" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Đăng xuất" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tra cứu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ttSV" text="Thông tin" />
+                  <MenuItem mnemonicParsing="false" onAction="#suaTTSV" text="Sửa đổi thông tin" />
+                  <MenuItem mnemonicParsing="false" onAction="#SVOKTX" text="Sinh viên ở KTX" />
+                  <MenuItem mnemonicParsing="false" onAction="#hoaDon" text="Hóa đơn" />
+                  <MenuItem mnemonicParsing="false" onAction="#khoanThu" text="Khoản thu đợt đăng ký" />
+                  <MenuItem mnemonicParsing="false" onAction="#donXinRa" text="Đơn xin ra" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Trợ giúp">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="464.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../image/thuvien.jpg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>

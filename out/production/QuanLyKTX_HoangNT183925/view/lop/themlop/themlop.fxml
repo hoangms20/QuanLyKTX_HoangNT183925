@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="277.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.lop.themlop.ThemLopController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="6.0" prefHeight="39.0" prefWidth="130.0" text="Thêm lớp">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tMaLop" prefHeight="39.0" prefWidth="186.0" promptText="Mã lớp">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tTenLop" prefHeight="39.0" prefWidth="388.0" promptText="Tên lớp">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tLopThuocVien" prefHeight="39.0" prefWidth="373.0" promptText="Mã viện">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="240.0" layoutY="227.0" mnemonicParsing="false" onAction="#xacNhanThemLop" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

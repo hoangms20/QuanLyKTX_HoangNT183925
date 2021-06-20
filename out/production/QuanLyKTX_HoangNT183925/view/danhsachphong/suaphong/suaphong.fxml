@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="282.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.danhsachphong.suaphong.SuaPhongController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="6.0" prefHeight="39.0" prefWidth="206.0" text="Sửa phòng">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="suaPhongMaKhuNha" prefHeight="39.0" prefWidth="167.0" promptText="Mã khu nhà" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="suaTenPhong" prefHeight="39.0" prefWidth="299.0" promptText="Tên phòng">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="suaPhongTang" prefHeight="39.0" prefWidth="180.0" promptText="Tầng" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="suaSLToiDa" prefHeight="39.0" prefWidth="124.0" promptText="Số lượng tối đa">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="110.0" text="Loại phòng:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="suaLoaiPhong" prefHeight="39.0" prefWidth="153.0" />
+         </children>
+      </HBox>
+      <Button layoutX="240.0" layoutY="227.0" mnemonicParsing="false" onAction="#xacsuaPhong" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="suaMaPhong" layoutX="226.0" layoutY="6.0" prefHeight="39.0" prefWidth="142.0">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

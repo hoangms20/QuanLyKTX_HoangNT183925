@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="282.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.danhsachphong.themphong.ThemPhongController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="6.0" prefHeight="39.0" prefWidth="227.0" text="Thêm phòng">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tMaPhong" prefHeight="39.0" prefWidth="174.0" promptText="Mã phòng">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tPhongMaKhuNha" prefHeight="39.0" prefWidth="167.0" promptText="Mã khu nhà" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tTenPhong" prefHeight="39.0" prefWidth="299.0" promptText="Tên phòng">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tPhongTang" prefHeight="39.0" prefWidth="180.0" promptText="Tầng" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tSLToiDa" prefHeight="39.0" prefWidth="124.0" promptText="Số lượng tối đa">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="110.0" text="Loại phòng:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="tLoaiPhong" prefHeight="39.0" prefWidth="153.0" />
+         </children>
+      </HBox>
+      <Button layoutX="240.0" layoutY="227.0" mnemonicParsing="false" onAction="#xacNhanThemPhong" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

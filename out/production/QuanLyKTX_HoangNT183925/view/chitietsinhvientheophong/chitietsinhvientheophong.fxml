@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.chitietsinhvientheophong.ChiTietSinhVienTheoPhongController">
+   <right>
+      <TableView fx:id="tableSVOKTX" prefHeight="651.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="sttSVOKTX" prefWidth="40.0" text="#" />
+          <TableColumn fx:id="mssvSVOKTX" prefWidth="85.0" text="Mã sinh viên" />
+            <TableColumn fx:id="tenSVOKTX" prefWidth="242.0" text="Tên sinh viên" />
+            <TableColumn fx:id="maLopSVOKTX" prefWidth="72.0" text="Mã lớp" />
+            <TableColumn fx:id="maKhoaSVOKTX" prefWidth="54.0" text="Khóa" />
+            <TableColumn fx:id="ngaybdSVOKTX" prefWidth="111.0" text="Ngày bắt đầu" />
+            <TableColumn fx:id="ngayktSVOKTX" prefWidth="110.0" text="Ngày kết thúc" />
+            <TableColumn fx:id="ngaySinhSVOKTX" prefWidth="93.0" text="Ngày sinh" />
+            <TableColumn fx:id="gioiTinhSVOKTX" prefWidth="70.0" text="Giới tính" />
+            <TableColumn fx:id="cmndSVOKTX" minWidth="0.0" prefWidth="83.0" text="CMND" />
+            <TableColumn fx:id="queQuanSVOKTX" prefWidth="142.0" text="Quê quán" />
+        </columns>
+      </TableView>
+   </right>
+   <left>
+      <AnchorPane prefHeight="651.0" prefWidth="174.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="30.0" layoutY="434.0" mnemonicParsing="false" onAction="#chuyenRa" prefHeight="68.0" prefWidth="130.0" text="Chuyển ra">
+               <graphic>
+                  <FontAwesomeIcon glyphName="BACKWARD" size="3em" />
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="tenPhong" layoutY="20.0" prefHeight="40.0" prefWidth="172.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="tenKhu" layoutY="60.0" prefHeight="40.0" prefWidth="172.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="slToiDa" layoutY="100.0" prefHeight="40.0" prefWidth="172.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="slDangO" layoutY="140.0" prefHeight="40.0" prefWidth="172.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

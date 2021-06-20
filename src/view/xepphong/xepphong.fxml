@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.xepphong.XepPhongController">
+   <left>
+      <AnchorPane prefHeight="455.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableViewDSChoXepPhong" layoutX="4.0" layoutY="-2.0" prefHeight="534.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="checkSVDuyetVao" prefWidth="38.0" />
+                <TableColumn fx:id="mssvDSCD" prefWidth="82.0" text="Mã sinh viên" />
+                  <TableColumn fx:id="tenSVDSCD" prefWidth="194.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="gioiTinhDSCD" prefWidth="71.0" text="Giới tính" />
+                  <TableColumn fx:id="mucDoUuTienDSCD" prefWidth="96.0" text="Mức độ ưu tiên" />
+                  <TableColumn fx:id="ngayDKDSCD" prefWidth="95.0" text="Ngày đăng ký" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="384.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablePhong" prefHeight="532.0" prefWidth="589.0">
+               <columns>
+                  <TableColumn fx:id="maPhong" text="Mã phòng" />
+                  <TableColumn fx:id="maKhuNha" prefWidth="82.0" text="Mã khu nhà" />
+                  <TableColumn fx:id="slToiDa" prefWidth="96.0" text="Số lượng tối đa" />
+                  <TableColumn fx:id="slDangO" prefWidth="104.0" text="Số lượng đang ở" />
+                  <TableColumn fx:id="loaiPhong" prefWidth="99.0" text="Loại phòng" />
+                  <TableColumn fx:id="tinhTrangPhong" prefWidth="126.0" text="Tình trạng phòng" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <AnchorPane prefHeight="110.0" prefWidth="1302.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="16.0" layoutY="9.0" prefHeight="26.0" prefWidth="128.0" text="Thời gian thuê phòng" />
+            <Label layoutX="29.0" layoutY="40.0" prefHeight="26.0" prefWidth="101.0" text="Ngày bắt đầu" />
+            <Label layoutX="29.0" layoutY="77.0" prefHeight="26.0" prefWidth="97.0" text="Ngày kết thúc" />
+            <DatePicker fx:id="ngayBDThue" layoutX="126.0" layoutY="44.0" />
+            <DatePicker fx:id="ngayKTThue" layoutX="126.0" layoutY="78.0" />
+            <Button layoutX="456.0" layoutY="56.0" mnemonicParsing="false" onAction="#xoaSVChoDuyet" prefHeight="39.0" prefWidth="126.0" text="Xóa">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#eb0b0b" glyphName="REMOVE" size="2em" />
+               </graphic>
+            </Button>
+            <Button layoutX="714.0" layoutY="53.0" mnemonicParsing="false" onAction="#giaHanThemSV" prefHeight="50.0" prefWidth="252.0" text="Gia hạn thêm cho các sinh viên">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="311.0" layoutY="55.0" mnemonicParsing="false" onAction="#capNhat" prefHeight="44.0" prefWidth="127.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutY="221.0" mnemonicParsing="false" onAction="#xepSVVao" prefHeight="68.0" prefWidth="130.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="FORWARD" size="3em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

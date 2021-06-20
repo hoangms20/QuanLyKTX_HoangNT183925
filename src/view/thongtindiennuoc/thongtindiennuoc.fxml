@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1332.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.thongtindiennuoc.ThongTinDienNuocController">
+   <left>
+      <TreeView fx:id="treeViewDN" prefHeight="651.0" prefWidth="141.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <TableView fx:id="tableDN" prefHeight="651.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="maPhongDN" prefWidth="71.0" text="Mã phòng" />
+          <TableColumn fx:id="maDichVuDN" prefWidth="85.0" text="Mã dịch vụ" />
+            <TableColumn fx:id="tenDVDN" prefWidth="282.0" text="Tên dịch vụ" />
+            <TableColumn fx:id="tienDMDN" prefWidth="117.0" text="Tiền định mức" />
+            <TableColumn fx:id="tienVuotDMDN" prefWidth="127.0" text="Tiền vượt định mức" />
+            <TableColumn fx:id="mucHoTroDN" prefWidth="88.0" text="Mức hỗ trợ" />
+            <TableColumn fx:id="chiSoCuDN" minWidth="0.0" prefWidth="77.0" text="Chỉ số cũ" />
+            <TableColumn fx:id="chiSoMoiDN" prefWidth="85.0" text="Chỉ số mới" />
+            <TableColumn fx:id="SLTieuThuDN" prefWidth="113.0" text="Số lượng tiêu thụ" />
+            <TableColumn fx:id="thanhTienDN" prefWidth="138.0" text="Thành tiền" />
+        </columns>
+      </TableView>
+   </right>
+   <top>
+      <HBox prefHeight="56.0" prefWidth="1371.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#themDN" prefHeight="40.0" prefWidth="140.0" text="Thêm">
+               <graphic>
+                  <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#lamMoiDN" prefHeight="40.0" prefWidth="171.0" text="Làm mới">
+               <graphic>
+                  <FontAwesomeIcon fill="#09d9f5" glyphName="REFRESH" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Label prefHeight="32.0" prefWidth="69.0" text="Ngày tạo:">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="ngayTaoDN" prefHeight="32.0" prefWidth="178.0" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

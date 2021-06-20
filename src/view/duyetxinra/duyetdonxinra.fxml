@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.duyetxinra.DuyetDonXinRaController">
+   <left>
+      <AnchorPane prefHeight="455.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableDXRChoDuyet" layoutX="4.0" layoutY="-2.0" prefHeight="454.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="checkDXRDuyetVao" prefWidth="38.0">
+                     <graphic>
+                        <CheckBox fx:id="selectALLDSCD" mnemonicParsing="false" onAction="#tichTatCaDSChoDuyet" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="maDXRDSCD" prefWidth="92.0" text="Mã đơn xin ra" />
+                <TableColumn fx:id="mssvDSCD" prefWidth="91.0" text="Mã sinh viên" />
+                  <TableColumn fx:id="tenSVDSCD" prefWidth="182.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="ngayDXRDSCD" prefWidth="84.0" text="Ngày lập đơn" />
+                  <TableColumn fx:id="trangThaiDXRDSCD" prefWidth="89.0" text="Trạng thái" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="384.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableDSDaDuyet" prefHeight="454.0" prefWidth="586.0">
+               <columns>
+                  <TableColumn fx:id="checkDXRDaDuyet" prefWidth="38.0">
+                     <graphic>
+                        <CheckBox fx:id="selectALLDSDD" mnemonicParsing="false" onAction="#tichTatCaDSDaDuyet" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="maDXRDSDD" prefWidth="92.0" text="Mã đơn xin ra" />
+                  <TableColumn fx:id="mssvDSDD" prefWidth="91.0" text="Mã sinh viên" />
+                  <TableColumn fx:id="tenSVDSDD" prefWidth="182.0" text="Tên sinh viên" />
+                  <TableColumn fx:id="ngayDXRDSDD" prefWidth="84.0" text="Ngày lập đơn" />
+                  <TableColumn fx:id="trangThaiDXRDSDD" prefWidth="98.0" text="Trạng thái" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="465.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutY="154.0" mnemonicParsing="false" onAction="#duyetDXR" prefHeight="68.0" prefWidth="130.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="FORWARD" size="3em" />
+               </graphic>
+            </Button>
+            <Button layoutY="255.0" mnemonicParsing="false" onAction="#huyDonXR" prefHeight="68.0" prefWidth="130.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="BACKWARD" size="3em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="97.0" prefWidth="1292.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="199.0" text="Danh sách đang chờ duyệt">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#xoaDXRChoDuyet" prefHeight="50.0" prefWidth="126.0" text="Xóa">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#eb0b0b" glyphName="REMOVE" size="2em" />
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="276.0" layoutY="49.0" prefHeight="39.0" prefWidth="237.0" text="Số lượng đơn xin ra chưa duyệt:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="slDXRChuaDuyet" layoutX="521.0" layoutY="58.0" prefHeight="21.0" prefWidth="53.0" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="700.0" layoutY="1.0" prefHeight="27.0" prefWidth="146.0" text="Danh sách đã duyệt">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="705.0" layoutY="58.0" prefHeight="29.0" prefWidth="136.0" text="Số lượng đã duyệt:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="slDXRDaDuyet" layoutX="841.0" layoutY="62.0" prefHeight="21.0" prefWidth="53.0" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="1108.0" layoutY="31.0" mnemonicParsing="false" onAction="#capNhatDXRDaDuyet" prefHeight="54.0" prefWidth="175.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+            </Button>
+            <Label fx:id="chiTieuDotDK" layoutX="350.0" layoutY="8.0" prefHeight="34.0" prefWidth="68.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

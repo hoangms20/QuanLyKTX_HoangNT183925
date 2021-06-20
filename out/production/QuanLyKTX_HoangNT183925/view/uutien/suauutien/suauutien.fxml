@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="347.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.uutien.suauutien.SuaUuTienController">
+   <children>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="97.0" text="Mã ưu tiên:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="maUuTienSuaUT" prefHeight="39.0" prefWidth="135.0">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="513.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="146.0" text="Tên ưu tiên mới:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tenUuTienMoi" prefHeight="39.0" prefWidth="363.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="513.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="146.0" text="Mức độ ưu tiên mới:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mucDoUuTienMoi" prefHeight="39.0" prefWidth="364.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="210.0" prefHeight="39.0" prefWidth="513.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="146.0" text="Ghi chú:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ghiChuUTMoi" prefHeight="39.0" prefWidth="365.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="6.0" prefHeight="39.0" prefWidth="206.0" text="Sửa ưu tiên">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="328.0" layoutY="285.0" mnemonicParsing="false" onAction="#xacNhanSuaUuTien" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

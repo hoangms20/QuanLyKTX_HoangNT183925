@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1246.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.danhsachphong.PhongController">
+    <top>
+        <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#themPhong" prefHeight="40.0" prefWidth="140.0" text="Thêm">
+                    <graphic>
+                        <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#suaPhong" prefHeight="40.0" prefWidth="140.0" text="Sửa">
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+                <Button mnemonicParsing="false" onAction="#xoaPhong" prefHeight="40.0" prefWidth="140.0" text="Xóa">
+                    <graphic>
+                        <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+        </HBox>
+    </top>
+    <bottom>
+        <TableView fx:id="tablePhong" prefHeight="577.0" prefWidth="1246.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="sttPhong" prefWidth="37.0" text="#" />
+                <TableColumn fx:id="maPhong" prefWidth="106.0" text="Mã phòng" />
+                <TableColumn fx:id="tenPhong" prefWidth="251.0" text="Tên phòng" />
+                <TableColumn fx:id="maKhu" prefWidth="119.0" text="Mã khu" />
+            <TableColumn fx:id="tangSo" prefWidth="93.0" text="Tầng" />
+            <TableColumn fx:id="slToiDaP" prefWidth="174.0" text="Số lượng tối đa" />
+            <TableColumn fx:id="slDangOP" prefWidth="158.0" text="Số lượng đang ở" />
+            <TableColumn fx:id="loaiPhong" prefWidth="132.0" text="Loại phòng" />
+            <TableColumn fx:id="tinhTrangPhong" prefWidth="199.0" text="Tình trạng phòng" />
+            </columns>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+        </TableView>
+    </bottom>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tkPhong" prefHeight="37.0" prefWidth="439.0" promptText="Tìm kiếm theo mã phòng">
+                    <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#timKiemPhong" prefHeight="42.0" prefWidth="167.0" text="Tìm kiếm">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon fill="#27b522" glyphName="SEARCH" size="2em" />
+               </graphic>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#capNhatDSPhong" prefHeight="30.0" prefWidth="171.0" text="Cập nhật">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c88eb" glyphName="REFRESH" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

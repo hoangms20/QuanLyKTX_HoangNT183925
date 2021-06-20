@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="336.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dotdk.themdotdk.ThemDotDKController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="6.0" prefHeight="39.0" prefWidth="259.0" text="Thêm đợt đăng ký">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="274.0" text="Số lượng chỗ còn trống của Ký túc xá:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="slConTrongKTX" prefHeight="39.0" prefWidth="178.0" textFill="#fc0606" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="446.0">
+         <children>
+            <TextField fx:id="tMaDotDK" prefHeight="39.0" prefWidth="146.0" promptText="Mã đợt đăng ký">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tTenLDotDK" prefHeight="39.0" prefWidth="288.0" promptText="Tên đợt đăng ký">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="156.0" layoutY="289.0" mnemonicParsing="false" onAction="#xacNhanThemDotDK" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="tNgaybdDotDK" layoutX="10.0" layoutY="178.0" />
+      <DatePicker fx:id="tNgayktDotDK" layoutX="245.0" layoutY="178.0" />
+      <Label layoutX="55.0" layoutY="150.0" text="Ngày bắt đầu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="150.0" text="Ngày kết thúc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="6.0" layoutY="230.0" prefHeight="39.0" prefWidth="440.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="239.0" text="Chỉ Tiêu: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="chiTieuKTX" prefHeight="39.0" prefWidth="361.0" promptText="Số lượng có thể duyệt vào tối đa" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

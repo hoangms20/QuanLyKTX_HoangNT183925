@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="337.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.donxinra.themdonxinra.ThemDonXinRaController">
+   <children>
+      <Label layoutX="130.0" layoutY="6.0" prefHeight="39.0" prefWidth="216.0" text="Thêm đơn xin ra">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="421.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="101.0" text="Mã đơn xin ra:" />
+            <TextField fx:id="tMaDonXR" prefHeight="39.0" prefWidth="167.0" promptText="Mã đơn xin ra">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="394.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="101.0" text="MSSV:" />
+            <TextField fx:id="tMSSVXR" prefHeight="39.0" prefWidth="166.0" promptText="MSSV" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="155.0" prefHeight="39.0" prefWidth="433.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="101.0" text="Ngày Lập đơn:" />
+            <DatePicker fx:id="tNgayLapDonXR" prefHeight="39.0" prefWidth="231.0" promptText="Ngày lập đơn (mm/dd/yyyy)" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="210.0" prefHeight="39.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="101.0" text="Lý do:" />
+            <TextField fx:id="tLyDoXR" prefHeight="39.0" prefWidth="333.0" promptText="Lý do">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="259.0" layoutY="275.0" mnemonicParsing="false" onAction="#xacNhanThemSVXR" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

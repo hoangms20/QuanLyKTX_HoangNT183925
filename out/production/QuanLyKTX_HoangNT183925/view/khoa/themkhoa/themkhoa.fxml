@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="231.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.khoa.themkhoa.ThemKhoaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="6.0" prefHeight="39.0" prefWidth="167.0" text="Thêm khóa">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tMaKhoa" prefHeight="39.0" prefWidth="167.0" promptText="Mã khóa">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tNamVaoHoc" prefHeight="39.0" prefWidth="192.0" promptText="Năm vào học" />
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="393.0">
+         <children>
+            <TextField fx:id="tTenKhoa" prefHeight="39.0" prefWidth="372.0" promptText="Tên khóa">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="228.0" layoutY="178.0" mnemonicParsing="false" onAction="#xacNhanThemKhoa" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.khoanthudotdk.KhoanThuDotDKController">
+   <top>
+      <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#themKTDDK" prefHeight="40.0" prefWidth="106.0" text="Thêm">
+               <graphic>
+                  <FontAwesomeIcon fill="#2793cf" glyphName="PLUS" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#xoaKTDDK" prefHeight="40.0" prefWidth="126.0" text="Xóa">
+               <graphic>
+                  <FontAwesomeIcon fill="#f20606" glyphName="REMOVE" size="2em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#taoPhieuKhoanThu" prefHeight="40.0" prefWidth="188.0" text="Tạo phiếu khoản thu cho đợt">
+               <HBox.margin>
+                  <Insets left="90.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <TableView fx:id="tableKTDDK" prefHeight="462.0" prefWidth="659.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="sttKTDDK" prefWidth="43.0" text="#" />
+          <TableColumn fx:id="maKTDDK" prefWidth="119.0" text="Mã khoản thu" />
+            <TableColumn fx:id="tenKTDDK" prefWidth="279.0" text="Tên khoản thu" />
+            <TableColumn fx:id="soTienKTDDK" prefWidth="200.0" text="Số tiền (VNĐ)" />
+        </columns>
+         <BorderPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="40.0" prefWidth="106.0" text="Đợt Đăng Ký:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="dotDK" onAction="#capNhatKTDDK" prefHeight="39.0" prefWidth="167.0">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></ComboBox>
+            <Label prefHeight="42.0" prefWidth="75.0" text="Tổng tiền:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="tongTienKTDDK" prefHeight="42.0" prefWidth="75.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>

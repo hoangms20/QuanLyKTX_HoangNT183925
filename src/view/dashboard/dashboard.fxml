@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dashboard.DashBoardController">
+   <top>
+      <MenuBar prefHeight="31.0" prefWidth="745.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Hệ thống">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#quanLyTKSV" text="Quản lý tài khoản" />
+              <MenuItem mnemonicParsing="false" onAction="#doiMK" text="Đổi mật khẩu" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Đăng xuất" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Quản lý sinh viên">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#SVDK" text="Sinh viên đăng ký" />
+                  <MenuItem mnemonicParsing="false" onAction="#SVOKTX" text="Sinh viên ở ký túc xá" />
+                  <MenuItem mnemonicParsing="false" onAction="#dotDK" text="Đợt đăng ký" />
+                  <MenuItem mnemonicParsing="false" onAction="#duyetsvvao" text="Duyệt sinh viên vào" />
+                  <MenuItem mnemonicParsing="false" onAction="#donxinra" text="Đơn xin ra" />
+                  <MenuItem mnemonicParsing="false" onAction="#duyetsvra" text="Duyệt sinh viên ra" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Quản lý phòng">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dsPhong" text="Danh sách phòng" />
+                  <MenuItem mnemonicParsing="false" onAction="#khuNha" text="Khu nhà" />
+                  <MenuItem mnemonicParsing="false" onAction="#xepPhong" text="Xếp phòng" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Quản lý khác">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#lop" text="Lớp" />
+                  <MenuItem mnemonicParsing="false" onAction="#khoa" text="Khóa" />
+                  <MenuItem mnemonicParsing="false" onAction="#vien" text="Viện" />
+                  <MenuItem mnemonicParsing="false" onAction="#uuTien" text="Ưu Tiên" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Quản lý thanh toán">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#dsKhoanThu" text="Danh sách khoản thu" />
+                  <MenuItem mnemonicParsing="false" onAction="#khoanThuTheoDot" text="Khoản thu theo đợt" />
+                  <MenuItem mnemonicParsing="false" onAction="#khoanThuSV" text="Khoản thu sinh viên" />
+                  <MenuItem mnemonicParsing="false" onAction="#thongTinDV" text="Thông tin dịch vụ" />
+                  <MenuItem mnemonicParsing="false" onAction="#thongTinDN" text="Thông tin điện nước" />
+                  <MenuItem mnemonicParsing="false" onAction="#loaiDV" text="Loại dịch vụ" />
+                  <MenuItem mnemonicParsing="false" onAction="#hoaDon" text="Hóa đơn" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Thống kê báo cáo">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#tkTongThe" text="Thống kê tổng thể" />
+                  <MenuItem mnemonicParsing="false" onAction="#tkDotDK" text="Thống kê đợt đăng kí" />
+                  <MenuItem mnemonicParsing="false" onAction="#tkHoaDon" text="Thống kê hóa đơn" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Trợ giúp">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="464.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../image/thuvien.jpg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="231.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.khunha.themKhuNha.ThemKhuNhaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="6.0" prefHeight="39.0" prefWidth="198.0" text="Thêm khu nhà">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="5.0" layoutY="45.0" prefHeight="39.0" prefWidth="349.0">
+         <children>
+            <TextField fx:id="tMaKhuNha" prefHeight="39.0" prefWidth="317.0" promptText="Mã khu">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="100.0" prefHeight="39.0" prefWidth="358.0">
+         <children>
+            <TextField fx:id="tTenKhuNha" prefHeight="39.0" prefWidth="329.0" promptText="Tên khu">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="197.0" layoutY="171.0" mnemonicParsing="false" onAction="#xacNhanThemKhuNha" prefHeight="33.0" prefWidth="140.0" text="Xác nhận">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

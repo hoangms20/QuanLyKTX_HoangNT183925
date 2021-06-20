@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.thongtindiennuoc.themdiennuoc.ThemDienNuocController">
+   <center>
+      <TableView fx:id="tableDN" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="sttThemDN" prefWidth="51.0" text="#" />
+          <TableColumn fx:id="maPhongThemDN" prefWidth="127.0" text="Mã phòng" />
+          <TableColumn fx:id="chiSoCuThemDN" prefWidth="125.0" text="Chỉ số cũ" />
+            <TableColumn fx:id="chiSoMoiThemDN" prefWidth="140.0" text="Chỉ số mới" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="83.0" prefWidth="447.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#luuDN" prefHeight="32.0" prefWidth="87.0" text="Lưu" />
+            <DatePicker fx:id="ngayGhiSoDN" layoutX="224.0" layoutY="11.0" prefHeight="25.0" prefWidth="148.0" />
+            <Label layoutX="125.0" layoutY="8.0" prefHeight="26.0" prefWidth="88.0" text="Ngày gi số DN:" />
+            <CheckBox fx:id="cbNuoc" layoutX="246.0" layoutY="52.0" mnemonicParsing="false" onAction="#selectNuoc" text="Nước" />
+            <CheckBox fx:id="cbDien" layoutX="156.0" layoutY="52.0" mnemonicParsing="false" onAction="#selectDien" text="Điện" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
