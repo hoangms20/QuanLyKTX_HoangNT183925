@@ -4,18 +4,18 @@ package test;
 public class Student {
     private String name;
     private String mssv;
-    private int math;
     private int english;
+    private int num;
 
     public Student(){
 
     }
 
-    public Student(String name, String mssv, int math, int english) {
+    public Student(String name, String mssv, int english) {
         this.name = name;
         this.mssv = mssv;
-        this.math = math;
         this.english = english;
+        this.num = 1;
     }
 
     public String getName() {
@@ -26,9 +26,6 @@ public class Student {
         return mssv;
     }
 
-    public int getMath() {
-        return math;
-    }
 
     public int getEnglish() {
         return english;
@@ -42,16 +39,21 @@ public class Student {
         this.mssv = mssv;
     }
 
-    public void setMath(int math) {
-        this.math = math;
-    }
 
     public void setEnglish(int english) {
         this.english = english;
     }
 
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
     public String getDetail(){
-        String s = getName()+", "+getMssv()+", "+getMath()+", "+getEnglish();
+        String s = getName()+", "+getMssv()+", "+getEnglish();
         return s;
     }
 }
